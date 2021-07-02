@@ -297,5 +297,18 @@ namespace Tour
         {
             ShowAllTuyen();
         }
+
+        private void searchtxb_Leave(object sender, EventArgs e)
+        {
+            //ShowAllTuyen();
+        }
+
+        private void searchtxb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

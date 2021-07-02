@@ -95,7 +95,7 @@ namespace Tour
         }
         public DataTable FindTuyen(string route)
         {
-            string sql = "Select * from Tuyen where TenTuyen like N'%" + route + "%'OR MaTuyen like N'%" + route + "%'";
+            string sql = "Select ID, MaTuyen, TenTuyen, XuatPhat, DiaDiem, ThoiGianToChuc, TenLoaiTuyen from Tuyen inner join LoaiTuyen on Tuyen.MaLoaiTuyen = LoaiTuyen.MaLoaiTuyen where TenTuyen like N'%" + route + "%'OR MaTuyen like N'%" + route + "%'";
             SqlConnection con = dc.getConnect();
             da = new SqlDataAdapter(sql, con);
             con.Open();

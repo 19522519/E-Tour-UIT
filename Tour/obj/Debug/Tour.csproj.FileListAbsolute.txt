@@ -203,3 +203,24 @@ D:\ĐỒ ÁN CNPM\E-Tour\Tour\obj\Debug\Tour.exe
 D:\ĐỒ ÁN CNPM\E-Tour\Tour\obj\Debug\Tour.pdb
 D:\dự án\CNPM\E-Tour\Tour\obj\Debug\Tour.RegisterAccount.resources
 D:\dự án\CNPM\E-Tour\Tour\obj\Debug\Tour.StaffProfile.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\bin\Debug\Tour.exe.config
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\bin\Debug\Tour.exe
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\bin\Debug\Tour.pdb
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.csprojAssemblyReference.cache
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.AboutUs.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.ChangePass.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.CSDLPhieuDatCho.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.DangKy.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.forgotpass.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.Help.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.LoginForm.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.RegisterAccount.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.SelectForm.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.StaffProfile.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.Tour.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.Properties.Resources.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.Route.resources
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.csproj.GenerateResource.cache
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.csproj.CoreCompileInputs.cache
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.exe
+D:\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.pdb

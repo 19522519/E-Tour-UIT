@@ -31,7 +31,7 @@ namespace Tour
             InitializeComponent();
             tkDAL = new ticketDAL();
             tbSearchTicket.ForeColor = Color.LightGray;
-            tbSearchTicket.Text = "Enter Tour ID or Name to search";
+            tbSearchTicket.Text = "Enter Tour ID to search";
             this.tbSearchTicket.Leave += new System.EventHandler(this.textBox1_Leave);
             this.tbSearchTicket.Enter += new System.EventHandler(this.textBox1_Enter);
             tbSearchResID.ForeColor = Color.LightGray;
@@ -44,14 +44,14 @@ namespace Tour
             if (tbSearchTicket.Text == "")
             {
                 tbSearchTicket.ForeColor = Color.LightGray;
-                tbSearchTicket.Text = "Enter Tour ID or Name to search";
+                tbSearchTicket.Text = "Enter Tour ID to search";
                 ShowTicket();
             }
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (tbSearchTicket.Text == "Enter Tour ID or Name to search")
+            if (tbSearchTicket.Text == "Enter Tour ID to search")
             {
                 tbSearchTicket.Text = "";
                 tbSearchTicket.ForeColor = Color.Black;
@@ -194,7 +194,7 @@ namespace Tour
             string value = tbSearchTicket.Text;
             if (!string.IsNullOrEmpty(value))
             {
-                string sql = "Select DuKhach.MaDuKhach,PhieuDatCho.MaChuyen, MaVe, Ve.MaPhieu, HoTen, DiaChi, SDT, GioiTinh, TenLoaiKhach, CMND_Passport, GiaVe from (((Ve INNER JOIN DuKhach ON Ve.MaDuKhach = DuKhach.MaDuKhach) INNER JOIN LoaiKhach ON DuKhach.MaLoaiKhach = LoaiKhach.MaLoaiKhach)Inner Join PhieuDatCho on PhieuDatCho.MaPhieu = Ve.MaPhieu)  where PhieuDatCho.MaChuyen like N'%" + value + "%'";
+                string sql = "SELECT DuKhach.MaDuKhach, HanPassport, HanVisa, PhieuDatCho.MaChuyen, TenLoaiTuyen, TenLoaiChuyen, LePhiHoanTra, TienHoanTra, MaVe, Ve.MaPhieu, HoTen, DiaChi, SDT, GioiTinh, TenLoaiKhach, CMND_Passport, Ve.GiaVe FROM(((((((Ve INNER JOIN DuKhach ON Ve.MaDuKhach = DuKhach.MaDuKhach) INNER JOIN LoaiKhach ON DuKhach.MaLoaiKhach = LoaiKhach.MaLoaiKhach)Inner Join PhieuDatCho on PhieuDatCho.MaPhieu = Ve.MaPhieu) INNER JOIN ChuyenDuLich on PhieuDatCho.MaChuyen = ChuyenDuLich.MaChuyen) INNER JOIN Loaichuyen on ChuyenDuLich.MaLoaiChuyen = Loaichuyen.MaLoaiChuyen) INNER JOIN Tuyen on ChuyenDuLich.MaTuyen = Tuyen.MaTuyen)INNER JOIN LoaiTuyen on Tuyen.MaLoaiTuyen = LoaiTuyen.MaLoaiTuyen)  where PhieuDatCho.MaChuyen like N'%" + value + "%'";
                 SqlConnection con = dc.getConnect();
                 adapter = new SqlDataAdapter(sql, con);
                 con.Open();
@@ -275,6 +275,45 @@ namespace Tour
             {
                 panelTime.Visible = true;
             }
+        }
+
+        private void tbName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbSearchResID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbSearchTicket_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbName_Enter(object sender, EventArgs e)
+        {
+            ShowTicket();
+        }
+
+        private void tbAddress_Enter(object sender, EventArgs e)
+        {
+            ShowTicket();
+        }
+
+        private void tbphone_Enter(object sender, EventArgs e)
+        {
+            ShowTicket();
         }
 
         private void btnTraVe_Click(object sender, EventArgs e)

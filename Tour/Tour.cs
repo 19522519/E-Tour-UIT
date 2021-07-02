@@ -302,7 +302,7 @@ namespace Tour
 
         private void tb_price_Enter(object sender, EventArgs e)
         {
-            ShowAllChuyen();
+            //ShowAllChuyen();
         }
 
         private void dtpKhoiHanh_Enter(object sender, EventArgs e)
@@ -325,5 +325,17 @@ namespace Tour
             ShowAllChuyen();
         }
 
+        private void tb_search_Leave(object sender, EventArgs e)
+        {
+            //ShowAllChuyen();
+        }
+
+        private void tb_search_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

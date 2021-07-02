@@ -41,14 +41,14 @@
             this.label1.Size = new System.Drawing.Size(485, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "About us";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(79, 56);
+            this.label2.Location = new System.Drawing.Point(61, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(355, 348);
+            this.label2.Size = new System.Drawing.Size(364, 364);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
