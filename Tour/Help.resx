@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Use the account creation section to create an account. Then use that account to log in and start the process of managing travel routes in the simplest way.            For more information, please contact email: 19522003@gm.uit.edu.vn</value>
+  </data>
 </root>
