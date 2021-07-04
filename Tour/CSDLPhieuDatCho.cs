@@ -362,11 +362,11 @@ namespace Tour
 
             Clear();
 
-            if (tkDAL.Delete(tk) && cusDAL.Delete(cus) && resDAL.Delete(res))
-            {
-                ShowTicket();
-            }
-            else MessageBox.Show("Error", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //if (tkDAL.Delete(tk) && cusDAL.Delete(cus) && resDAL.Delete(res))
+            //{
+            //    ShowTicket();
+            //}
+            //else MessageBox.Show("Error", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnDel_Click(object sender, EventArgs e)
