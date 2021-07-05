@@ -2,6 +2,8 @@
 use TourManagement
 SET DATEFORMAT dmy
 --"Phần tuyến tạo bảng bằng tay kéo xuống column properties chỉnh identity specification = yes"
+--Tài khoản dự phòng--
+Insert into UserID values('19522003@gm.uit.edu.vn','1234','Vo','Phat','090432')
 create table UserID (
 	Email nvarchar(50),
 	Password nvarchar(50),
