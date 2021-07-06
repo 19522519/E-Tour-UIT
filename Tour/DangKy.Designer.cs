@@ -161,7 +161,7 @@ namespace Tour
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(7, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 490);
             this.panel1.TabIndex = 1;
@@ -173,7 +173,7 @@ namespace Tour
             this.panel7.Controls.Add(this.rdDomestic);
             this.panel7.ForeColor = System.Drawing.Color.Black;
             this.panel7.Location = new System.Drawing.Point(106, 309);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(184, 36);
             this.panel7.TabIndex = 29;
@@ -184,7 +184,7 @@ namespace Tour
             this.RdForeign.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdForeign.ForeColor = System.Drawing.Color.Black;
             this.RdForeign.Location = new System.Drawing.Point(103, 2);
-            this.RdForeign.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RdForeign.Margin = new System.Windows.Forms.Padding(2);
             this.RdForeign.Name = "RdForeign";
             this.RdForeign.Size = new System.Drawing.Size(73, 23);
             this.RdForeign.TabIndex = 18;
@@ -198,7 +198,7 @@ namespace Tour
             this.rdDomestic.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdDomestic.ForeColor = System.Drawing.Color.Black;
             this.rdDomestic.Location = new System.Drawing.Point(2, 1);
-            this.rdDomestic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdDomestic.Margin = new System.Windows.Forms.Padding(2);
             this.rdDomestic.Name = "rdDomestic";
             this.rdDomestic.Size = new System.Drawing.Size(84, 23);
             this.rdDomestic.TabIndex = 17;
@@ -212,7 +212,7 @@ namespace Tour
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel17.Controls.Add(this.tbEmail);
             this.panel17.Location = new System.Drawing.Point(105, 209);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(183, 28);
             this.panel17.TabIndex = 28;
@@ -231,7 +231,7 @@ namespace Tour
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel16.Controls.Add(this.tbTelephone);
             this.panel16.Location = new System.Drawing.Point(106, 162);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(183, 28);
             this.panel16.TabIndex = 27;
@@ -276,7 +276,7 @@ namespace Tour
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel15.Controls.Add(this.tbAddress);
             this.panel15.Location = new System.Drawing.Point(106, 114);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(183, 28);
             this.panel15.TabIndex = 26;
@@ -285,7 +285,7 @@ namespace Tour
             // 
             this.tbAddress.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAddress.Location = new System.Drawing.Point(-2, 0);
-            this.tbAddress.MaxLength = 20;
+            this.tbAddress.MaxLength = 90;
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(183, 26);
             this.tbAddress.TabIndex = 7;
@@ -295,7 +295,7 @@ namespace Tour
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel13.Controls.Add(this.tbSurname);
             this.panel13.Location = new System.Drawing.Point(106, 62);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(183, 28);
             this.panel13.TabIndex = 25;
@@ -315,7 +315,7 @@ namespace Tour
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel14.Controls.Add(this.tbName);
             this.panel14.Location = new System.Drawing.Point(106, 13);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(183, 28);
             this.panel14.TabIndex = 24;
@@ -335,7 +335,7 @@ namespace Tour
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel10.Controls.Add(this.tbCMND);
             this.panel10.Location = new System.Drawing.Point(4, 361);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(284, 27);
             this.panel10.TabIndex = 22;
@@ -346,7 +346,7 @@ namespace Tour
             this.tbCMND.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbCMND.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCMND.Location = new System.Drawing.Point(-1, -2);
-            this.tbCMND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCMND.Margin = new System.Windows.Forms.Padding(2);
             this.tbCMND.MaxLength = 40;
             this.tbCMND.Name = "tbCMND";
             this.tbCMND.Size = new System.Drawing.Size(283, 26);
@@ -363,7 +363,7 @@ namespace Tour
             this.PnFore.Controls.Add(this.label7);
             this.PnFore.Controls.Add(this.lb7);
             this.PnFore.Location = new System.Drawing.Point(-6, 401);
-            this.PnFore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PnFore.Margin = new System.Windows.Forms.Padding(2);
             this.PnFore.Name = "PnFore";
             this.PnFore.Size = new System.Drawing.Size(295, 64);
             this.PnFore.TabIndex = 21;
@@ -384,7 +384,7 @@ namespace Tour
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel12.Location = new System.Drawing.Point(135, 37);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(157, 21);
             this.panel12.TabIndex = 23;
@@ -394,7 +394,7 @@ namespace Tour
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel11.Controls.Add(this.PassEXP);
             this.panel11.Location = new System.Drawing.Point(135, 6);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(157, 23);
             this.panel11.TabIndex = 23;
@@ -441,7 +441,7 @@ namespace Tour
             this.panel6.Controls.Add(this.RdFmale);
             this.panel6.ForeColor = System.Drawing.Color.Black;
             this.panel6.Location = new System.Drawing.Point(106, 254);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(184, 36);
             this.panel6.TabIndex = 19;
@@ -453,7 +453,7 @@ namespace Tour
             this.RdMale.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdMale.ForeColor = System.Drawing.Color.Black;
             this.RdMale.Location = new System.Drawing.Point(2, 2);
-            this.RdMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RdMale.Margin = new System.Windows.Forms.Padding(2);
             this.RdMale.Name = "RdMale";
             this.RdMale.Size = new System.Drawing.Size(58, 23);
             this.RdMale.TabIndex = 17;
@@ -467,7 +467,7 @@ namespace Tour
             this.RdFmale.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdFmale.ForeColor = System.Drawing.Color.Black;
             this.RdFmale.Location = new System.Drawing.Point(103, 1);
-            this.RdFmale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RdFmale.Margin = new System.Windows.Forms.Padding(2);
             this.RdFmale.Name = "RdFmale";
             this.RdFmale.Size = new System.Drawing.Size(71, 23);
             this.RdFmale.TabIndex = 18;
@@ -546,7 +546,7 @@ namespace Tour
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Location = new System.Drawing.Point(320, 391);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(336, 179);
             this.panel4.TabIndex = 4;
@@ -556,7 +556,7 @@ namespace Tour
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel25.Controls.Add(this.tbTotal);
             this.panel25.Location = new System.Drawing.Point(146, 123);
-            this.panel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel25.Margin = new System.Windows.Forms.Padding(2);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(180, 28);
             this.panel25.TabIndex = 34;
@@ -577,7 +577,7 @@ namespace Tour
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel24.Controls.Add(this.tbDiscount);
             this.panel24.Location = new System.Drawing.Point(146, 72);
-            this.panel24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel24.Margin = new System.Windows.Forms.Padding(2);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(180, 28);
             this.panel24.TabIndex = 33;
@@ -598,7 +598,7 @@ namespace Tour
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel23.Controls.Add(this.tbPrice);
             this.panel23.Location = new System.Drawing.Point(146, 23);
-            this.panel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(180, 28);
             this.panel23.TabIndex = 32;
@@ -622,7 +622,7 @@ namespace Tour
             this.btReset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btReset.ForeColor = System.Drawing.Color.White;
             this.btReset.Location = new System.Drawing.Point(233, 223);
-            this.btReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btReset.Margin = new System.Windows.Forms.Padding(2);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(84, 33);
             this.btReset.TabIndex = 21;
@@ -696,7 +696,7 @@ namespace Tour
             this.panel3.Controls.Add(this.lbTime);
             this.panel3.Controls.Add(this.rtbreservation);
             this.panel3.Location = new System.Drawing.Point(668, 80);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(317, 292);
             this.panel3.TabIndex = 9;
@@ -716,7 +716,7 @@ namespace Tour
             // rtbreservation
             // 
             this.rtbreservation.Location = new System.Drawing.Point(-2, 35);
-            this.rtbreservation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbreservation.Margin = new System.Windows.Forms.Padding(2);
             this.rtbreservation.Name = "rtbreservation";
             this.rtbreservation.ReadOnly = true;
             this.rtbreservation.Size = new System.Drawing.Size(316, 255);
@@ -729,7 +729,7 @@ namespace Tour
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel9.Controls.Add(this.rtbTicket);
             this.panel9.Location = new System.Drawing.Point(668, 391);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(316, 179);
             this.panel9.TabIndex = 10;
@@ -737,7 +737,7 @@ namespace Tour
             // rtbTicket
             // 
             this.rtbTicket.Location = new System.Drawing.Point(-2, -2);
-            this.rtbTicket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rtbTicket.Margin = new System.Windows.Forms.Padding(2);
             this.rtbTicket.Name = "rtbTicket";
             this.rtbTicket.ReadOnly = true;
             this.rtbTicket.Size = new System.Drawing.Size(316, 179);
@@ -773,7 +773,7 @@ namespace Tour
             this.panel8.Controls.Add(this.label13);
             this.panel8.ForeColor = System.Drawing.Color.Black;
             this.panel8.Location = new System.Drawing.Point(-2, -2);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(336, 292);
             this.panel8.TabIndex = 6;
@@ -783,7 +783,7 @@ namespace Tour
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel22.Controls.Add(this.tbDuration);
             this.panel22.Location = new System.Drawing.Point(146, 254);
-            this.panel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(180, 28);
             this.panel22.TabIndex = 31;
@@ -804,7 +804,7 @@ namespace Tour
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel21.Controls.Add(this.tbDate);
             this.panel21.Location = new System.Drawing.Point(146, 210);
-            this.panel21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel21.Margin = new System.Windows.Forms.Padding(2);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(180, 28);
             this.panel21.TabIndex = 30;
@@ -825,7 +825,7 @@ namespace Tour
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel20.Controls.Add(this.tbAmount);
             this.panel20.Location = new System.Drawing.Point(146, 162);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(180, 28);
             this.panel20.TabIndex = 29;
@@ -846,7 +846,7 @@ namespace Tour
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel19.Controls.Add(this.tbVehicle);
             this.panel19.Location = new System.Drawing.Point(146, 114);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(180, 28);
             this.panel19.TabIndex = 28;
@@ -867,7 +867,7 @@ namespace Tour
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel18.Controls.Add(this.cbDes);
             this.panel18.Location = new System.Drawing.Point(146, 62);
-            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(180, 28);
             this.panel18.TabIndex = 18;
@@ -880,7 +880,7 @@ namespace Tour
             this.cbDes.ForeColor = System.Drawing.Color.Black;
             this.cbDes.FormattingEnabled = true;
             this.cbDes.Location = new System.Drawing.Point(0, 0);
-            this.cbDes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbDes.Margin = new System.Windows.Forms.Padding(2);
             this.cbDes.Name = "cbDes";
             this.cbDes.Size = new System.Drawing.Size(178, 27);
             this.cbDes.TabIndex = 4;
@@ -976,7 +976,7 @@ namespace Tour
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(320, 80);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(336, 292);
             this.panel2.TabIndex = 2;
@@ -1043,7 +1043,7 @@ namespace Tour
             this.btExit.ForeColor = System.Drawing.Color.Red;
             this.btExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btExit.Location = new System.Drawing.Point(906, 576);
-            this.btExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btExit.Margin = new System.Windows.Forms.Padding(2);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(67, 25);
             this.btExit.TabIndex = 13;
@@ -1061,7 +1061,7 @@ namespace Tour
             this.btCreate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCreate.ForeColor = System.Drawing.Color.Black;
             this.btCreate.Location = new System.Drawing.Point(718, 576);
-            this.btCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCreate.Margin = new System.Windows.Forms.Padding(2);
             this.btCreate.Name = "btCreate";
             this.btCreate.Size = new System.Drawing.Size(85, 25);
             this.btCreate.TabIndex = 13;
@@ -1079,7 +1079,7 @@ namespace Tour
             this.btnGo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGo.ForeColor = System.Drawing.Color.Black;
             this.btnGo.Location = new System.Drawing.Point(807, 576);
-            this.btnGo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGo.Margin = new System.Windows.Forms.Padding(2);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(95, 25);
             this.btnGo.TabIndex = 13;
@@ -1123,7 +1123,7 @@ namespace Tour
             this.Controls.Add(this.panel9);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
