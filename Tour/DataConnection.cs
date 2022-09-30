@@ -13,7 +13,7 @@ namespace Tour
         public DataConnection()
         {
             //conStr = "Data Source= DESKTOP-QLEJV95\\SQLEXPRESS; Initial Catalog=TourManagement; Integrated Security=True";
-            conStr = "Data Source= DESKTOP-CI36P6F; Initial Catalog = TourManagement; Integrated Security = True";
+            conStr = @"Data Source= DESKTOP-976QKQS\SQLEXPRESS; Initial Catalog = TourManagement; Integrated Security = True";
         }
         public SqlConnection getConnect()
         {

@@ -17,8 +17,11 @@ namespace Tour
 {
     public partial class StaffProfile : Form
     {
+        DataConnection dataConnection;
+        SqlCommand sqlCommand;
         public StaffProfile()
         {
+            dataConnection = new DataConnection();
             InitializeComponent();
         }
 
@@ -28,18 +31,18 @@ namespace Tour
             {
                 txbGmail.Text = Properties.Settings.Default.UserName;
             }
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-CI36P6F;Initial Catalog=TourManagement;Integrated Security=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("Select Ho,Ten,SĐT from UserID where Email=@Email", con);
-            cmd.Parameters.Add("@Email", txbGmail.Text);
-            SqlDataReader da = cmd.ExecuteReader();
+            SqlConnection sqlConnection = dataConnection.getConnect();
+            sqlConnection.Open();
+            sqlCommand = new SqlCommand("Select Ho,Ten,SĐT from UserID where Email=@Email", sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@Email", txbGmail.Text);
+            SqlDataReader da = sqlCommand.ExecuteReader();
             while (da.Read())
             {
                 txbHo.Text = da.GetValue(0).ToString();
                 txbTen.Text = da.GetValue(1).ToString();
                 txbSDT.Text = da.GetValue(2).ToString();
             }
-            con.Close();
+            sqlConnection.Close();
         }
 
         private void backbtn_Click(object sender, EventArgs e)

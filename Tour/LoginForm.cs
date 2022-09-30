@@ -14,10 +14,13 @@ namespace Tour
 {
     public partial class LoginForm : Form
     {
-        public static string connectionString = @"Data Source=DESKTOP-CI36P6F;Initial Catalog=TourManagement;Integrated Security=True";
+        DataConnection dataConnection;
+        SqlDataAdapter sqlDataAdapter;
+
         System.Text.RegularExpressions.Regex rEMail = new System.Text.RegularExpressions.Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
         public LoginForm()
         {
+            dataConnection = new DataConnection();
             InitializeComponent();
             emailtxb.ForeColor = Color.LightGray;
             emailtxb.Text = "Email";
@@ -71,11 +74,11 @@ namespace Tour
                 Properties.Settings.Default.Password = "";
                 Properties.Settings.Default.Save();
             }
-            SqlConnection sqlc = new SqlConnection(connectionString);
+            SqlConnection sqlConnection = dataConnection.getConnect();
             string query = "Select * from UserID Where Email ='" + emailtxb.Text.Trim() + "' and Password = '" + Encrypt(passwordtxb.Text.Trim()) + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlc);
+            sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
             DataTable dttb = new DataTable();
-            sda.Fill(dttb);
+            sqlDataAdapter.Fill(dttb);
             if (dttb.Rows.Count == 1)
             {
                 Properties.Settings.Default.UserName = emailtxb.Text;

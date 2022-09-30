@@ -14,7 +14,9 @@ namespace Tour
 {
     public partial class ChangePass : Form
     {
-        public static string connectionString = @"Data Source=DESKTOP-CI36P6F;Initial Catalog=TourManagement;Integrated Security=True";
+        DataConnection dataConnection;
+        SqlCommand sqlCommand;
+
         string email = forgotpass.to;
         static string Encrypt(string value)
         {
@@ -27,6 +29,7 @@ namespace Tour
         }
         public ChangePass()
         {
+            dataConnection = new DataConnection();
             InitializeComponent();
         }
 
@@ -34,11 +37,11 @@ namespace Tour
         {
             if (newpasstxb.Text == confirmtxb.Text && newpasstxb.Text != "")
             {
-                SqlConnection sqlc = new SqlConnection(connectionString);
-                SqlCommand sqlCmd = new SqlCommand("UPDATE [dbo].[UserID] SET [Password] ='" + /*Encrypt(*/newpasstxb.Text/*)*/ + "' WHERE Email='" + email + "' ", sqlc);
-                sqlc.Open();
-                sqlCmd.ExecuteNonQuery();
-                sqlc.Close();
+                SqlConnection sqlConnection = dataConnection.getConnect();
+                sqlCommand = new SqlCommand("UPDATE [dbo].[UserID] SET [Password] ='" + Encrypt(newpasstxb.Text) + "' WHERE Email='" + email + "' ", sqlConnection);
+                sqlConnection.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnection.Close();
                 MessageBox.Show("Reset password success!!!");
                 this.Close();
             }

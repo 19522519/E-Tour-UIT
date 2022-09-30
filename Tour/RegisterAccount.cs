@@ -19,9 +19,11 @@ namespace Tour
         string randomcode;
         public static string to;
         System.Text.RegularExpressions.Regex rEMail = new System.Text.RegularExpressions.Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
-        string connectionString = @"Data Source=DESKTOP-CI36P6F;Initial Catalog=TourManagement;Integrated Security=True";
+        DataConnection dataConnection;
+        SqlCommand sqlCommand;
         public RegisterAccount()
         {
+            dataConnection = new DataConnection();
             InitializeComponent();
         }
         static string Encrypt(string value)
@@ -35,13 +37,13 @@ namespace Tour
         }
         bool CheckDuplicateEmail(string email)
         {
-            SqlConnection con = new SqlConnection(connectionString);
-            con.Open();
-            SqlCommand cmd = new SqlCommand("select count(*) from UserID where Email=@Email", con);
-            cmd.Connection = con;
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.Parameters.AddWithValue("@email", email);
-            int numrecord = (int)cmd.ExecuteScalar();
+            SqlConnection sqlConnection = dataConnection.getConnect();
+            sqlConnection.Open();
+            sqlCommand = new SqlCommand("select count(*) from UserID where Email=@Email", sqlConnection);
+            sqlCommand.Connection = sqlConnection;
+            sqlCommand.CommandType = System.Data.CommandType.Text;
+            sqlCommand.Parameters.AddWithValue("@email", email);
+            int numrecord = (int)sqlCommand.ExecuteScalar();
             if (numrecord > 0)
                 return false;
             return true;
@@ -50,7 +52,7 @@ namespace Tour
         private void SignUpbtn_Click(object sender, EventArgs e)
         {
             string sql = "Insert into UserID(Ho,Ten,Email,Password,SĐT) values(@Ho,@Ten,@Email,@Password,@SĐT)";
-            SqlConnection sqlCon;
+            SqlConnection sqlConnection;
             if (CheckDuplicateEmail(txbGmail.Text) == false)
             {
                 MessageBox.Show("Your Email is already in use");
@@ -69,19 +71,19 @@ namespace Tour
             }
             else
             {
-                using (sqlCon = new SqlConnection(connectionString))
+                using (sqlConnection = dataConnection.getConnect())
                 {
                     label12.Text = "Checked";
                     label12.ForeColor = Color.Green;
                     SignUpbtn.Enabled = true;
-                    SqlCommand sqlCmd = new SqlCommand(sql, sqlCon);
-                    sqlCon.Open();
-                    sqlCmd.Parameters.AddWithValue("@Ho", txbHo.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Ten", txbTen.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@SĐT", txbSDT.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Email", txbGmail.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("@Password", Encrypt(txbPass.Text.Trim()));
-                    sqlCmd.ExecuteNonQuery();
+                    sqlCommand = new SqlCommand(sql, sqlConnection);
+                    sqlConnection.Open();
+                    sqlCommand.Parameters.AddWithValue("@Ho", txbHo.Text.Trim());
+                    sqlCommand.Parameters.AddWithValue("@Ten", txbTen.Text.Trim());
+                    sqlCommand.Parameters.AddWithValue("@SĐT", txbSDT.Text.Trim());
+                    sqlCommand.Parameters.AddWithValue("@Email", txbGmail.Text.Trim());
+                    sqlCommand.Parameters.AddWithValue("@Password", Encrypt(txbPass.Text.Trim()));
+                    sqlCommand.ExecuteNonQuery();
                     //sqlCon.Close();
                     MessageBox.Show("SignUp success!!!");
                     Clear();
@@ -131,8 +133,8 @@ namespace Tour
                     randomcode = (random.Next(100000, 999999)).ToString();
                     MailMessage message = new MailMessage();
                     to = (txbGmail.Text).ToString();
-                    from = "PTS.UIT.Group@gmail.com";
-                    pass = "PTS@uitGroup";
+                    from = "testing01.uit@gmail.com";
+                    pass = "tnuouslqfpdncmjp";
                     messageBody = "Verification code exists for your email :" + randomcode;
                     message.To.Add(to);
                     message.From = new MailAddress(from);

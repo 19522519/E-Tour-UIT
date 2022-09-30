@@ -17,10 +17,12 @@ namespace Tour
     {
         string randomcode;
         public static string to;
-        public static string connectionString = @"Data Source=DESKTOP-CI36P6F;Initial Catalog=TourManagement;Integrated Security=True";
+        DataConnection dataConnection;
+        SqlDataAdapter sqlDataAdapter;
         System.Text.RegularExpressions.Regex rEMail = new System.Text.RegularExpressions.Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
         public forgotpass()
         {
+            dataConnection = new DataConnection();
             InitializeComponent();
             emailtxb.ForeColor = Color.LightGray;
             emailtxb.Text = "Enter Your Email";
@@ -46,11 +48,11 @@ namespace Tour
         }
         private void sendbtn_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlc = new SqlConnection(connectionString);
+            SqlConnection sqlConnection = dataConnection.getConnect();
             string query = "Select * from UserID Where Email ='" + emailtxb.Text.Trim() + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlc);
+            sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
             DataTable dttb = new DataTable();
-            sda.Fill(dttb);
+            sqlDataAdapter.Fill(dttb);
             if (dttb.Rows.Count == 1)
             {
                 string from, pass, messageBody;
@@ -58,8 +60,8 @@ namespace Tour
                 randomcode = (random.Next(100000, 999999)).ToString();
                 MailMessage message = new MailMessage();
                 to = (emailtxb.Text).ToString();
-                from = "PTS.UIT.Group@gmail.com";
-                pass = "PTS@uitGroup";
+                from = "testing01.uit@gmail.com";
+                pass = "tnuouslqfpdncmjp";
                 messageBody = "Your reset account code:" + randomcode;
                 message.To.Add(to);
                 message.From = new MailAddress(from);

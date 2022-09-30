@@ -13,8 +13,6 @@ namespace Tour
     {
         DataConnection dc;
         SqlCommand cmd;
-        //String conStr = "Data Source= DESKTOP-QLEJV95\\SQLEXPRESS; Initial Catalog=TourManagement; Integrated Security=True";
-        String conStr = "Data Source= DESKTOP-CI36P6F; Initial Catalog = TourManagement; Integrated Security = True";
         public typeCustomerDAL()
         {
             dc = new DataConnection();
@@ -23,7 +21,7 @@ namespace Tour
         public bool Insert(typeCustomer tpcus)
         {
             string sql = "INSERT INTO LoaiKhach(MaLoaiKhach, TenLoaiKhach) VALUES (@MaLoaiKhach, @TenLoaiKhach)";
-            SqlConnection con = new SqlConnection(conStr);
+            SqlConnection con = dc.getConnect();
             try
             {
                 cmd = new SqlCommand(sql, con);

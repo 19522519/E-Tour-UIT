@@ -266,3 +266,24 @@ C:\Users\Admin\Desktop\SE104.L22.PMCL_Team4_FinalProject_E-Tour\ĐỒ ÁN CUỐI
 C:\Users\Admin\Desktop\SE104.L22.PMCL_Team4_FinalProject_E-Tour\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\SE104.L22.PMCL_Team4_FinalProject_E-Tour\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.exe
 C:\Users\Admin\Desktop\SE104.L22.PMCL_Team4_FinalProject_E-Tour\ĐỒ ÁN CUỐI KÌ CNPM\E-Tour-UIT\Tour\obj\Debug\Tour.pdb
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\bin\Debug\Tour.exe.config
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\bin\Debug\Tour.exe
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\bin\Debug\Tour.pdb
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.csproj.AssemblyReference.cache
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.AboutUs.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.ChangePass.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.CSDLPhieuDatCho.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.DangKy.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.forgotpass.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.Help.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.LoginForm.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.RegisterAccount.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.SelectForm.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.StaffProfile.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.Tour.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.Properties.Resources.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.Route.resources
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.csproj.GenerateResource.cache
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.csproj.CoreCompileInputs.cache
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.exe
+C:\Users\Tan Viet\Desktop\Projects\WinForm\lts\E-Tour-UIT\Tour\obj\Debug\Tour.pdb
